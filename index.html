@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Add futuristic font link (example: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>CYBERDEX</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Pokémon..." />
+        <!-- Maybe add filter buttons later -->
+      </div>
+    </header>
+
+    <main id="pokedex-grid" class="pokedex-grid">
+      <!-- Pokémon cards will be loaded here by JavaScript -->
+      <div class="loader">Loading Cyber-Specimens...</div>
+    </main>
+
+    <div id="pagination" class="pagination">
+      <!-- Pagination controls will be added here -->
+    </div>
+
+    <!-- Modal or Detail View Area (initially hidden) -->
+    <div id="pokemonDetailModal" class="modal">
+      <div class="modal-content cyberpunk-panel">
+        <span class="close-button">×</span>
+        <div id="modalBody">
+          <!-- Detailed Pokémon info loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
